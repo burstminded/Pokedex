@@ -12,3 +12,16 @@ h1 {
   align-items: center;
   gap: 10px;
 }
+
+.loadMoreButton {
+  display: block;
+  width: 70%;
+  padding: 15px 50px;
+  font-size: 3em;
+  color: #ffffff;
+  border: none;
+  margin: 20px auto;
+  background-color: #32d9fa;
+  border-radius: 30px;
+  cursor: pointer;
+}

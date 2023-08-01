@@ -4,18 +4,23 @@
     max-width: 175px;
     padding: 10px;
     background-color: #fff;
-    aspect-ratio: 9 / 16;
+    aspect-ratio: 9 / 14;
     color: #000;
     display: flex;
     flex-flow: column nowrap;
     justify-content: start;
     align-items: center;
     gap: 5px;
+    cursor: pointer;
 }
 
 img {
     aspect-ratio: 1 / 1;
     max-width: 90%;
+}
+
+h2 {
+    margin: 0;
 }
 
 table {
@@ -28,21 +33,33 @@ th {
     width: 75%;
 }
 
+td {
+    width: 25%;
+    padding: 0 5px;
+    text-align: center;
+}
+
+tbody {
+    width: 100%;
+}
+
 .card table {
     display: none;
 }
 
 .card.active {
     position: fixed;
-    right: 3%;
+    right: 1%;
     top: 25%;
     width: 15%;
-    min-width: 180px;
+    min-width: 150px;
+    max-width: 500px;
     justify-content: space-between;
+    pointer-events: none;
 }
 
 .card.active table{
-    display: block;
+    display: table;
 }
 
 .card button {
@@ -50,6 +67,7 @@ th {
     border: none;
     border-radius: 10px;
     box-shadow: inset 0 36px 49px -27px rgba(230,230,230,1);
+    margin: auto 5px;
 }
 
 .normal {
@@ -123,3 +141,9 @@ th {
 .fairy {
     background-color: #EE99AC;
 }
+
+.loader {
+    text-align: center;
+    font-size: 2em;
+}
+
