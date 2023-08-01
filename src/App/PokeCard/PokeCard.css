@@ -50,7 +50,7 @@ tbody {
 .card.active {
     position: fixed;
     right: 1%;
-    top: 25%;
+    top: 15%;
     width: 15%;
     min-width: 150px;
     max-width: 500px;
