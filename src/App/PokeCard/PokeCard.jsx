@@ -6,7 +6,8 @@ function PokeCard ({ stats, name, weight, moves, id, pokeTypes, images, isLoaded
         onCardClick(stats, name, weight, moves, pokeTypes, images, id);
     }
 
-       return isLoaded ? (
+
+       return isLoaded && (
         <div className={isActive ? 'card active' : 'card'} onClick={handleClick}>
             <img src={images} alt={name}/>
             <h2>{name.charAt(0).toUpperCase() + name.slice(1)}{isActive ? ' #' + id : null}</h2>
@@ -62,8 +63,7 @@ function PokeCard ({ stats, name, weight, moves, id, pokeTypes, images, isLoaded
 
 
         </div>
-    )
-    : null
+    );
 }
 
 export default PokeCard;

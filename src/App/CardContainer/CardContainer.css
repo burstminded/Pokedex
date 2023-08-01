@@ -1,0 +1,15 @@
+.loader {
+    text-align: center;
+    font-size: 2em;
+}
+
+.cardContainer {
+    width: 60%;
+    max-width: 725px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 5px auto;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+}

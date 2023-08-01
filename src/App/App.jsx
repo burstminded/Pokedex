@@ -12,7 +12,7 @@ function App() {
         fetchPokemons();
     }, []);
 
-    function fetchPokemons()     {
+    function fetchPokemons()         {
         fetch(`https://pokeapi.co/api/v2/pokemon/?limit=12&offset=${numberOfLoads * 12}`)
             .then((response) => response.json())
             .then((data) => {
